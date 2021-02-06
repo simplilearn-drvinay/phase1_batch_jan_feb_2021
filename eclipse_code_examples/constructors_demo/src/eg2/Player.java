@@ -6,7 +6,7 @@ public class Player {
 	private String name;
 	private String sportName;
 	private String countryName;
-	private Address address;
+	private Address address; //has-a
 	
 	public Player(int id,String name) {
 		this.id=id;
