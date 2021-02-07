@@ -2,6 +2,7 @@ package eg1;
 
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -68,6 +69,13 @@ public class Demo1 {
 		
 		System.out.println("ts.contains(\"java\") "+ts.contains("java"));
 		System.out.println("ts.contains(\"jee\") "+ts.contains("jee"));
+		
+		System.out.println("\nIterating using iterator");
+		Iterator<String> i=ts.iterator();
+		while(i.hasNext()) {
+			String t=i.next();
+			System.out.println(t.toUpperCase());
+		}
 
 	}
 

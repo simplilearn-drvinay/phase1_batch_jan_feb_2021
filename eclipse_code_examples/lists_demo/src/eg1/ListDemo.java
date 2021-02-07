@@ -29,11 +29,11 @@ public class ListDemo {
 		li2.add(null);
 		li2.add(1220);
 		li2.add(1220);
-		li2.add(null);
+		li2.add(null); //insert at last
 		System.out.println("li2 : "+li2);
-		li2.add(1, 220);
+		li2.add(1, 220); //insert at specific position
 		System.out.println("li2 : "+li2);
-		li2.set(1, 1000);
+		li2.set(1, 1000); //update
 		System.out.println("li2 : "+li2);
 		System.out.println("li2.size() : "+li2.size());
 		System.out.println("li2.get(2) : "+li2.get(2));

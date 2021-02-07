@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class Demo1 {
@@ -82,11 +84,26 @@ public class Demo1 {
 		ht.remove(100);
 		System.out.println("ht : "+ht);
 		
+		
 		System.out.println("ht.containsKey(120) : "+ht.containsKey(120));
 		System.out.println("ht.containsKey(290) : "+ht.containsKey(290));
 		
 		System.out.println("ht.containsValue(\"jee\") : "+ht.containsValue("jee"));
 		System.out.println("ht.containsValue(\"spring\") : "+ht.containsValue("spring"));
+		
+		System.out.println("ht.keySet() : "+ht.keySet());
+		System.out.println("ht.values() : "+ht.values());
+		
+		Set<Integer> set=ht.keySet();
+		System.out.println("\nIterating using keySet()");
+		for(Integer i:set) {
+			System.out.println("key is "+i+"  Value is "+ht.get(i));
+		}
+		
+		System.out.println("\nIterating using entrySet()");
+		for(Entry<Integer, String> e:ht.entrySet()) {
+			System.out.println("Key -> "+e.getKey()+" value -> "+e.getValue());
+		}
 
 	}
 
