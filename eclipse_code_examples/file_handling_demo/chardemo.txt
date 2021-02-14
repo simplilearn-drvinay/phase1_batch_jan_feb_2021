@@ -1,0 +1,9 @@
+hello from char stream again
+hello again from char stream. no need of conversion here
+camilo
+shlomit
+malini
+sandeep
+liliya
+arash
+harash
