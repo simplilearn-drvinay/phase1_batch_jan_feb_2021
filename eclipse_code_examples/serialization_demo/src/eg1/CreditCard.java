@@ -8,6 +8,7 @@ public class CreditCard implements Serializable{
 	private String cardHolderName;
 	private String cardType;
 	private transient int cvv;
+	//private String fanName;
 	
 	public CreditCard() {
 		// TODO Auto-generated constructor stub
