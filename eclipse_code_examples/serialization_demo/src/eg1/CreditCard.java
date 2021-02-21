@@ -4,6 +4,10 @@ import java.io.Serializable;
 
 public class CreditCard implements Serializable{
 
+	/**
+	 * 
+	 */
+	
 	private long ccNumber;
 	private String cardHolderName;
 	private String cardType;
